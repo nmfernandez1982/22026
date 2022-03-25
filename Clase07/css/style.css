@@ -1,0 +1,9 @@
+body{background-color: gray;}
+
+h1,h2{font-family: 'Smokum', cursive;margin: auto;text-align: center;text-decoration: underline;font-size: 2.5em  ;}
+
+h2{font-size: 1.5em;}
+
+span{background-color: red;}
+
+div span{background-color: blue;}
