@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;}
+
+
+
+
+.navegador{
+            background-color: rgb(231,231,125);
+            text-align: center;
+            border: 1px solid red;
+            width: 800px;
+            height: 20px;
+            margin: auto;            
+            /*margin-top: 100px;*/
+            /*margin: 100px 100px 100px 100px;*/
+            padding-top: 30px;
+            
+          }
+
+
+.anclas{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+       }
+
+
+.foot{
+    background-color: rgb(231,231,125);
+    text-align: left;
+    width: 800px;
+    height: 20px;
+    }
