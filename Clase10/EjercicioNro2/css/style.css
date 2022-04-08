@@ -1,0 +1,62 @@
+body
+{
+margin: 0px;
+padding: 0px;
+}
+
+.izquierda
+{
+background-color: yellow;
+width: 50%;
+height: 100vh;
+}
+
+
+.derecha
+{
+background-image: url("https://picsum.photos/800");
+background-image: center;
+background-image: cover;
+width: 50%;
+height: 100vh;
+}
+
+#pantalla_dividida
+{
+   display: flex;
+}
+
+
+h1
+{
+    font-size: 150%;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+p{
+    width: 50%;
+    margin: auto;
+    font-size: 100%;
+}
+
+.boton
+{
+    margin-top: 20%;
+    margin: auto;
+}
+
+a
+{
+border: 3px solid white;
+text-decoration: none;
+color: white;
+border-radius: 30px;
+display: inline-block;
+font-weight: bold;
+margin-top: 10%;
+}
+
+
+
