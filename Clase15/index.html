@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+    </head>
+    <body>
+
+        <script>
+            var variable1=4;
+
+            if(variable1<=15)
+            {
+                console.log("Resultado Verdadero");
+            }
+
+            //switch
+            switch(variable1)
+            {
+                case 1:
+                       console.log("EL valor es: 1");
+                       break;
+                case 2:
+                        console.log("EL valor es: 2"); 
+                        break;
+                case 3:
+                        console.log("EL valor es: 3");
+                        break;
+                case 4:  
+                        console.log("EL valor es: 4");
+                        break;
+                default:
+                        console.log("EL valor es: Otro");
+                        break;
+            }
+            
+
+
+            var dia=new Date().getDay();
+            
+            switch(dia)
+            {
+                case 0:
+                    console.log("Domingo");
+                    break;
+                case 1:
+                    console.log("Lunes");
+                    break;
+                case 2:
+                    console.log("Martes");
+                    break;           
+
+            }
+
+
+    var i=10;
+
+
+    while(i<=100)
+    {
+        console.log("Valor de i = "+i);
+        i=i+1;
+    }
+
+
+    do{
+        console.log("Entro al DO WHile");
+        i++;
+    }while(i<200);
+    
+    x="prueba";
+
+    var resultado = (x<1000) ? x : 1000;
+
+    console.log(resultado);
+
+
+
+
+        </script>
+    
+    </body>
+</html>
