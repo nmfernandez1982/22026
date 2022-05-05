@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+    </head>
+    <body>
+
+        <script>
+
+            Funcion1();
+            Funcion1();
+            Funcion1();
+            Funcion1();
+
+            function Funcion1()
+            {
+                //alert("Hola Mundo.....");
+                console.log("Hola Mundo.... Funcion 1")
+            }
+            //////////////////////////////////////////
+
+            var dato1=81;
+            var dato2=90;
+
+            Funcion2(dato1,dato2);
+
+            function Funcion2(x,y)
+            {
+                let suma=x+y;
+                console.log("La suma es: "+suma);
+
+            }
+
+            ///////////////////////////////////////////////
+            var dato3=90;
+            var dato4=90;
+            var dato5=0;
+
+            
+
+            dato5=Funcion3(dato3,dato4);
+
+            console.log("El resultado de Funcion 5 es:"+dato5);
+
+             function Funcion3(j,p)
+             {
+                 return j+p;
+             }   
+
+             /////////////////////////////////////////////////
+
+             
+             var nombre='Nicolas';
+
+             mensaje();
+
+             function mensaje()
+             {
+                 nombre='Pedro';                 
+             }
+             console.log(nombre);
+
+             ////////////////////////////////////////////////////
+             mensajeL();
+
+             function mensajeL()
+             {
+                  let nombreL='Nicolas'
+                  console.log("Nombre dentro de la funcion :"+nombreL);
+             }
+
+             //console.log(nombreL);
+
+             ////////////////////////////////////////////////////
+             mensajeCompleto()             
+             
+             function mensajeCompleto(nombre='Anonimo',mensaje='hola Mundo')
+             {
+                console.log(nombre+"---"+mensaje);
+
+             }
+             ///////////////////////////////////////////////////////
+             
+             let edad=prompt('Ingrese edad',18);
+
+
+             verificar(edad);
+
+             function verificar(edad)
+             {
+                 if(edad<18)
+                 {
+                     alert("Ingreso No permitido");
+                 }
+                 else
+                 {
+                     alert ("Ingreso autorizado.")
+                 }
+             }
+
+             ///////////////////////////////////////////////////////
+             var nombre='nicolas';
+             var nombre2='JULIETA';
+             
+             console.log(nombre.toUpperCase() );
+             console.log(nombre2.toLowerCase() );
+             console.log(nombre2.length);
+             console.log(nombre2.slice(0,4));
+
+             var empresa="Nombre: Arcor";
+             console.log(empresa.replace("Arcor","Terrabusi"));
+
+             /////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    
+    </body>
+</html>
