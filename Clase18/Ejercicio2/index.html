@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div>
+            <label for="numero1" >Primer Numero</label>
+            <input type="number" id="numero1" >    
+            <br>
+            <br>
+            <label for="numero2">Segundo Numero</label>
+            <input type="number" id="numero2" >
+            <br>
+            <br>
+            <button onclick="calcular('suma');" >Sumar</button>
+            <button onclick="calcular('resta');">restar</button>
+            <button onclick="calcular('mult');" >mult</button>
+            <button onclick="calcular('div');">Div</button>
+            <br>
+            <label for="result" >Resultado</label>
+            <input type="number" readonly="true" id="result" >
+        </div>
+    </body>
+</html>
