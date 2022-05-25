@@ -1,0 +1,64 @@
+use base22026;
+drop table usuarios;
+
+use base22026;
+create table CLIENTES
+(
+ID_CLIENTE INT NOT NULL auto_increment,
+NOMBRE varchar(30) NULL,
+APELLIDO varchar(30) NULL,
+DNI INT NOT NULL,
+MAIL varchar(30) unique,
+DIRECCION varchar(30),
+ID_LOCALIDAD int NOT NULL,
+ID_PROVINCIA int NOT NULL,
+FECHA_ALTA date,
+ESTADO BOOL NOT NULL,
+primary key(ID_CLIENTE)
+);
+
+
+CREATE TABLE PROVINCIAS
+(
+ID_PROVINCIA int NOT NULL,
+PROVINCIA varchar(39),
+primary key(ID_PROVINCIA)
+);
+
+
+
+insert into clientes values (1,'NIcolas','Fernandez',29031734,'s1@gmail.com','Sarmiento 3344',1,1,'2022-05-24',1);
+insert into clientes values (2,'Juana','Alba',29031734,'s2@gmail.com','Sarmiento 3344',1,2,'2022-05-24',1);
+insert into clientes values (3,'Pedro','Duarte',29031734,'s3@gmail.com','Sarmiento 3344',1,3,'2022-05-24',1);
+insert into clientes values (4,'Cecilia','Fernandez',29031734,'s4@gmail.com','Sarmiento 3344',1,1,'2022-05-24',1);
+
+select * from clientes;
+
+
+ALTER TABLE clientes
+add constraint clientes_provincias
+foreign key(ID_PROVINCIA) references provincias(ID_PROVINCIA);
+
+select * from provincias;
+
+
+insert provincias values(1,'Buenos Aires');
+insert provincias values(2,'Santa Fe');
+insert provincias values(3,'La Pampa');
+insert provincias values(4,'Entre Rios');
+
+delete from provincias where ID_PROVINCIA=2;
+
+
+select * from clientes;
+
+
+select nombre,apellido,PROVINCIAS.PROVINCIA from clientes
+inner join PROVINCIAS on PROVINCIAS.ID_PROVINCIA=CLIENTES.ID_PROVINCIA;
+
+select nombre,apellido,PROVINCIAS.PROVINCIA from clientes
+left join PROVINCIAS on PROVINCIAS.ID_PROVINCIA=CLIENTES.ID_PROVINCIA;
+
+select nombre,apellido,PROVINCIAS.PROVINCIA from clientes
+right join PROVINCIAS on PROVINCIAS.ID_PROVINCIA=CLIENTES.ID_PROVINCIA;
+

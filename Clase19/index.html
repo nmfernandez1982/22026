@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+    </head>
+    <body>
+
+        <script>
+            persona1={
+                nombre: 'Nicolas',
+                apellido: 'Fernandez',
+                edad:40,
+                comision:22026,
+            }
+
+            persona2={
+                nombre: 'Nicolas',
+                apellido: 'Fernandez',
+                edad:40,
+                comision:22026,
+            }
+
+            empleado1={
+                legajo:123,
+                puesto:'supersivor'
+            }
+
+
+            console.log(persona1.nombre);
+
+            cambiarNombre(persona1); 
+            
+            function cambiarNombre(ObjetoEnviado)
+            {
+                ObjetoEnviado.nombre='Pedro';
+
+            }
+
+            console.log(persona1.nombre);
+
+
+
+        </script>
+    
+    </body>
+</html>
